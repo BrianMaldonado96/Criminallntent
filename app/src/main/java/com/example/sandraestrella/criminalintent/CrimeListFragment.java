@@ -67,12 +67,12 @@ public class CrimeListFragment extends Fragment{
                         .findViewById(R.id.list_item_crime_solved_chech_box);
             }
 
-
-        public void bindCrime(Crime crime){
-            mCrime = crime;
-            mTitleTextView.setText(mCrime.getmTitle());
-            mDateTextView.setText(mCrime.getmDate().toString());
-            mSolvedCheckBox.setChecked(mCrime.ismSolved());
+            public void bindCrime(Crime crime) {
+                mCrime = crime;
+                mTitleTextView.setText(mCrime.getmTitle());
+                mDateTextView.setText(mCrime.getmDate().toString());
+                mSolvedCheckBox.setChecked(mCrime.ismSolved());
+            }
         }
 
             private class CrimeAdapter extends RecyclerView.Adapter<CrimeHolder> {
@@ -103,4 +103,3 @@ public class CrimeListFragment extends Fragment{
             }
 
         }
-
